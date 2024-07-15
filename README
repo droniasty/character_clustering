@@ -1,0 +1,13 @@
+This is my solution for the First Global Assignment for the Learning systems (Systemy Uczące Się) at the Warsaw University. The purpose of this task was to  to write a program that clusters characters.
+
+How to Run
+Usage: python script.py <argument>
+
+My solution consists of two steps:
+Firstly, I cluster images based on their dimensions—this leads to cleaning the dataset from images of merged letters and punctuation marks, as most of those images were assigned to a dedicated cluster, and splitting images of letters into a few small subsets that are easy to run clustering algorithms on.
+Secondly, I run clustering algorithms. The set of punctuation marks is clustered by DBSCAN, where dimensions are used as the metric. I think this approach makes sense in this case, as the dimensions of images in this group vary widely.
+The sets of images of letters are subjected to dimensionality reduction and then clustered using K-means with the standard metric.
+The set of images containing merged letters is treated as a single cluster.
+I tested my program on the provided sample of 7600 characters, and it performed quite well, assigning images depicting different letters to different clusters with low execution time.
+
+The expected duration of execution is less than one minute.
