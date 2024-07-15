@@ -1,4 +1,4 @@
-This is my solution for the First Global Assignment for the Learning systems (Systemy Uczące Się) at the Warsaw University. The purpose of this task was to  to write a program that clusters characters.
+This is my solution for the First Global Assignment for the Learning systems (Systemy Uczące Się) course at the Warsaw University. The purpose of this task was to  to write a program that clusters characters.
 
 How to Run
 Usage: python script.py <argument>
